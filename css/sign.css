@@ -1,0 +1,146 @@
+.sign {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+.sign-right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.sign-left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-direction: column;
+}
+.sign-left img {
+   position: relative;
+   top: 7%;
+   left: -10%;
+}
+.sign-title {
+    color: var(--green);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.6%; /* 88.064px */
+    margin-bottom: 1em;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.sign-right label {
+    color: var(--green);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.6%; /* 33.024px */
+    margin-bottom: .5em;
+}
+.sign-right input {
+    margin-bottom: 2em;
+    width: 35em;
+    height: 4em;
+    border-radius: 7px;
+    border: .2em solid var(--green);
+    outline: none;
+}
+.sign-right input::placeholder{
+    color: var(grey);
+    text-align: right;
+    font-family: Almarai;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 .5em;
+    line-height: 137.6%; /* 33.024px */
+}
+.sign-right input{
+    color: var(grey);
+    text-align: right;
+    font-family: Almarai;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 .1em;
+    line-height: 137.6%; /* 33.024px */
+}
+.sign-right input:focus {
+    -webkit-box-shadow:0px 0px 59px 0px rgba(1,199,169,0.97);
+    -moz-box-shadow: 0px 0px 59px 0px rgba(1,199,169,0.97);
+    box-shadow: 0px 0px 59px 0px rgba(1,199,169,0.97);
+}
+.sign-right button {
+    margin-top: 1em;
+    width: 156px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: var(--green);
+    font-size: 2rem;
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+.sign-right button:hover {
+    border-radius: 50px;
+}
+/*responsive 1400*/
+@media only screen and (max-width: 1400px) {
+    .sign-left {
+        display: none;
+    }
+    .sign-right {
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-right form button {
+        margin: 1em auto;
+
+    }
+   }
+/*iphone responsive design*/
+@media only screen and (max-width: 450px) {
+    .sign-right form button {
+        margin: 1em auto;
+    }
+    .sign-title {
+        font-size: 3rem;
+        margin-bottom: 1em;
+    }
+    .sign-right label {
+        color: var(--green);
+        text-align: center;
+        font-family: var(--font);
+        font-size: 1.5rem;
+        margin-bottom: .5em;
+    }
+    .sign-right input {
+        margin-bottom: 2em;
+        width: 20em;
+        height: 3em;
+    }
+    .sign-right button {
+        margin-top: 1em;
+        width: 135px;
+        height: 42px;
+        font-size: 1.7rem;
+    }
+   }

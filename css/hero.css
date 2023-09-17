@@ -1,0 +1,50 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 6em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.6%; /* 88.064px */
+    width: 40vw;
+    height: 40vh;
+}
+.hero svg {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.hero svg:hover {
+    transform: translateY(1em);
+}
+/*Responsive design*/
+@media only screen and (max-width: 1400px) {
+    .main-text {
+        width: 56.2rem;
+        font-size: 4.8rem;
+        height: 6em;
+    }
+   }
+/*iphone design*/
+@media only screen and (max-width: 450px) {
+    .main-text {
+        width: 13em;
+        font-size: 3rem;
+        height: 6em;
+        margin-bottom: 1em;
+    }
+    #my-btn {
+        
+    }
+   }

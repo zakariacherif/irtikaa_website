@@ -1,0 +1,91 @@
+.contact{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+.social {
+
+}
+.social h1 {
+    color: var(--green);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.6%; /* 88.064px */
+    margin-bottom: 1em;
+}
+.social-co {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.social-co svg  {
+    margin: 0 6em;
+    transition: all .3 ease-in-out;
+    cursor: pointer;
+}
+.face {
+    transition: all .3s ease-in-out;
+}
+.face:hover {
+    scale: 1.5;
+}
+.mail {
+    transition: all .3s ease-in-out;
+}
+.mail:hover {
+    scale: 1.5;
+}
+.twitter {
+    transition: all .3s ease-in-out;
+}
+.twitter:hover {
+    scale: 1.5;
+}
+/*ipad mini*/
+@media only screen and (max-width: 768px) {
+    .social h1{
+        font-size: 4.3rem; 
+    }
+    .face {
+        height: 7em;
+    }
+    .mail {
+        height: 7em;
+    }
+    .twitter {
+        height: 7em;
+    }
+    .social-co svg {
+        margin: 0 4em;
+    }
+   }
+/*iphone*/
+@media only screen and (max-width: 450px) {
+    .contact {
+        height: 50vh;
+    }
+    .social h1{
+        font-size: 3rem; 
+    }
+    .face {
+        height: 4em;
+    }
+    .mail {
+        height: 4em;
+    }
+    .twitter {
+        height: 4em;
+    }
+    .social-co svg {
+        margin: 0 .5em;
+    }
+   }

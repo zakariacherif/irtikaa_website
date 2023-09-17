@@ -1,0 +1,84 @@
+.we {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+.right-side {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.main-heading {
+    color: var(--green);
+    font-family: var(--font);
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.6%; /* 88.064px */
+}
+.heading-text {
+    width: 100%;
+    padding-top: 1em;
+    color: var(--green);
+    font-family: var(--font);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.6%; /* 44.032px */
+    }
+.left-side {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-direction: column;
+}
+.left-side img {
+    position: relative;
+    width: 50.8853em;
+    height: 49.4856em;
+    flex-shrink: 0;
+    top: 4em;
+    left: -4em;
+}
+/*responsive design*/
+@media only screen and (max-width: 1400px) {
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+   }
+/*ipad mini*/
+@media only screen and (max-width: 768px) {
+    .main-heading{
+        font-size: 4rem; 
+    }
+    .heading-text {
+        font-size: 2rem;
+    }
+   }
+   /*iphone responsive design*/
+   @media only screen and (max-width: 450px) {
+    .main-heading{
+        font-size: 3rem; 
+    }
+    .heading-text {
+        font-size: 1.5rem;
+    }
+    .we {
+        height: 50vh;
+    }
+   }
